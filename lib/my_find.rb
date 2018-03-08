@@ -4,10 +4,12 @@ def my_find(collection)
   arr_result = []
   i = 0
   while i < collection.length
-    arr_result << yield(collection[i])
+    if  yield(collection[i]) == true
+      return collection[i]
+    else
+
     i += 1
   end
-  result = arr_result.include?(true) ? collection[arr_result.index(true)] : nil
   
 
 end
