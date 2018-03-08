@@ -8,6 +8,6 @@ def my_find(collection)
     i += 1
   end
   result = arr_result.include?(true) ? collection[arr_result.index(true)] : nil
-  result
+  
   
 end
