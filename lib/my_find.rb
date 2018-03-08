@@ -9,5 +9,5 @@ def my_find(collection)
   end
   result = arr_result.include?(true) ? collection[arr_result.index(true)] : nil
   
-  
+
 end
